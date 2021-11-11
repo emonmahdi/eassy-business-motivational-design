@@ -1,0 +1,167 @@
+
+
+
+  @media(max-width: 1199px){
+	.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.container {
+        max-width: 1140px !important;
+}
+
+@media(max-width: 991px){
+    .navbar-toggler-icon{
+        color:#000;
+    }
+	.hero_img {
+    width: 80% !important;
+}
+.hero_img h1 {
+    font-size: 60px;}
+
+.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.card h1 {
+    font-size: 18px;}
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 22px;}
+
+
+
+
+@media(max-width: 767px){
+
+	.hero_img h1 {
+    font-size: 32px !important;
+}
+.hero_img {
+    width: 80% !important;
+}
+
+.hero_img h3 {
+    font-size: 24px !important;
+}
+
+.carousel-caption p{
+	font-size: 18px !important;
+}
+.carousel-caption h5{
+	font-size: 18px !important;
+
+}
+.title h1 {
+    font-size: 36px;}
+
+.d-none {
+    display: contents !important;
+}
+.Bottle {
+    padding: 50px 0 50px 0;
+}
+
+.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.container {
+    width: 85% !important;
+}
+
+
+}
+
+
+
+
+
+@media(max-width: 575px){
+
+.logo-img {
+    height: auto;
+    width: 100px;
+}    
+	.hero_img h1 {
+    font-size: 32px !important;
+}
+
+
+.hero_img h3 {
+    font-size: 18px !important;
+}
+.hero_img {
+    width: 77%;
+}
+.bottom {
+	margin: 4px auto;
+    font-size: 22px;
+}
+.form-control{
+	    width: 250px;
+    font-size: 18px;
+}
+.title h1 {
+    font-size: 26px;}
+
+.Bottle {
+    
+    padding: 40px 0 40px 0;
+}
+
+.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.carousel-caption h5{
+	font-size: 16px !important;
+    margin-top: 10px;
+}
+
+.carousel-caption p {
+    font-size: 15px !important;
+}
+
+.container {
+    width: 85% !important;
+}
+
+.faq p{
+	font-size: 16px;
+}
+
+.heading{ 
+    width: 65%;  
+}
+#Program_bonifit .abc{
+    font-size: 20px!important; 
+}
+.students-img img{
+    margin-top: -10px;
+}
+
+
+}
+
+@media(max-width: 375px){
+    .logo-img { 
+    width: 80px;
+    } 
+    .heading{ 
+        width: 80%;  
+    }
+    #Program_bonifit .abc{
+        font-size: 15px!important; 
+    }
+    .heading h3{
+        font-size: 16px;
+    }
+}
