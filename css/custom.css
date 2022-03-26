@@ -9,8 +9,55 @@ body{
     -webkit-font-smoothing: antialiased;
 
 }
+/* pop up */
+#popup{ 
+    background-color: #fff;
+    padding: 20px;
+    width: 450px;
+    height: 500px; 
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999;
+    color:#000;
+}  
+h3{
+    text-align: right;
+    cursor: pointer;
+    font-size: 35px;
+}
 
-
+.top-text-close-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close{
+     
+}
+.subscription-form{
+    padding: 10px;
+}
+.subscription-form h6{
+    text-align: center;
+    padding: 10px 0;
+}
+.subscription-form input,.subscription-form select{
+    border: 1px solid #ddd;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-bottom: 12px;
+}
+button.subscription-btn{
+    text-align: center!important;
+    display: inline-block; 
+    border:none;
+    background-color: #FFC600;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
 /* top_menu   */
 
 .top_bar{
@@ -655,18 +702,36 @@ body{
     padding: 20px;
 }
 .about-content ul li{
-    padding: 7px 0;
-    font-size: 20px;
+    padding: 7px 0; 
     list-style: none;
+    text-align: justify;
+}
+.about-content ul li p{
+    font-size: 20px;
 }
 .fa-caret-right{
     color:#FFC600;
     margin-right: 10px;
 }
 /* ============about eassy business============== */
-.about-content li p{ 
-    font-size: 17px;
-    line-height: 25px;
+.about-image {
+    background-color: #000;
+    text-align: center;
+}
+.about-image img{
+     width: 100%;
+    /* height: 50%;
+    border-radius: 50%; */  
+}
+.about-image-e-business img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.about-content ul li p{ 
+    font-size: 16px;
+    line-height: 27px;
 }
 /* =============gallery===================== */
 .gallery-top{
@@ -739,4 +804,39 @@ body{
 }
 .single-course{
     margin-bottom: 20px;
+}
+.enroll-btn{
+    animation-name:enroll;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    position: relative; 
+}
+.apps-btn{
+    animation-name:apps;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    position: relative;
+}
+@keyframes enroll {
+    0%{ 
+        left: 1px;
+    }  
+    50%{
+        left: 25px;
+    } 
+    100%{
+        left: 1px;
+    }
+}
+@keyframes apps {
+    0%{ 
+        left: 0px;
+    }  
+    50%{
+        left: 25px;
+    } 
+    100%{
+        left: 0px;
+    }
 }

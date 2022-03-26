@@ -10,6 +10,9 @@
     .navbar-toggler-icon{
         color:#000;
     }
+    .enroll-link{
+        /* display: none; */
+    }
 	.hero_img {
     width: 80% !important;
     }
@@ -65,7 +68,10 @@
     .container {
         width: 85% !important;
     }
- 
+    .about-image img{
+        width: 70%;
+        height: 70%; 
+    }
 
 }
  
@@ -153,6 +159,28 @@
     .about-text h3{  
         font-size: 30px; 
     }
+    @keyframes enroll {
+        0%{ 
+            left: 0px;
+        }  
+        50%{
+            left: 15px;
+        } 
+        100%{
+            left: 01px;
+        }
+    }
+    @keyframes apps {
+        0%{ 
+            left: 0px;
+        }  
+        50%{
+            left: 15px;
+        } 
+        100%{
+            left: 0px;
+        }
+    }
 }
 @media(max-width:400px){
     .about-title::after{
@@ -163,6 +191,9 @@
         height: 4px;
         width: 90px;
         background-color: #FFC600;
+    }
+    .top2btn{
+        margin-left: -20px;
     }
 }
 @media(max-width:375px){
