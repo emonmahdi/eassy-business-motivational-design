@@ -164,6 +164,9 @@
          width:300px;
           
     }
+    .single-link h3{
+        text-align: center;
+    }
     @keyframes enroll {
         0%{ 
             left: 0px;
