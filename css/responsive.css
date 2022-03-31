@@ -158,6 +158,11 @@
     }
     .about-text h3{  
         font-size: 30px; 
+
+    }
+    #popup{
+         width:300px;
+          
     }
     @keyframes enroll {
         0%{ 

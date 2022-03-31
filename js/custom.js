@@ -5,7 +5,7 @@ const displayForm = () => {
 
   window.addEventListener('scroll', document.querySelector('#popup').style.display = 'block')
 }
-setInterval(displayForm, 10000);
+setInterval(displayForm, 30000);
 
 document.querySelector('#close').addEventListener('click', function() {
   document.querySelector('#popup').style.display = 'none'
