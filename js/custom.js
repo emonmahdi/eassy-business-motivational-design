@@ -5,12 +5,15 @@ const displayForm = () => {
 
   window.addEventListener('scroll', document.querySelector('#popup').style.display = 'block')
 }
-setInterval(displayForm, 30000);
+setTimeout(displayForm);
 
 document.querySelector('#close').addEventListener('click', function() {
   document.querySelector('#popup').style.display = 'none'
 })
 
+function openform(){
+  window.addEventListener('click', document.querySelector('#popup').style.display = 'block')
+}
 
 
 document.addEventListener("DOMContentLoaded", function(){
