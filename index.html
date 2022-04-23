@@ -31,7 +31,7 @@
     <div id="popup">
       <div class="top-text-close-btn">
         <div>
-          <h6>Everything About Business</h6>
+          <h6 class="fw-bold">Everything About Business</h6>
         </div> 
         <div>
           <h3 id="close">&times;</h3>
@@ -56,11 +56,36 @@
           <option value="Dhaka">Dhaka</option>
         </select>
          <div class="submit-btn text-center my-3">
-          <button class="subscription-btn">Subscribe Now</button>
+          <button class="subscription-btn fw-bold">Subscribe Now</button>
          </div>
         
          
       </form> 
+  </div>
+  <!-- Popup2 Payment Options -->
+  <div id="popup2" class="rounded">
+    <div class="top-text-close-btn2">
+      <div>
+        <h2 class="fw-bold text-danger">Payment Method</h2>
+      </div> 
+      <div>
+        <h3 id="close2" class="fw-bold">&times;</h3>
+      </div>  
+    </div>
+    <div class="mt-5">
+       <div class="d-flex justify-content-between align-items-center mb-5">
+         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/bkash.jpg" alt=""></div>
+         <div><h5>-01784564541</h5></div>
+       </div>
+       <div class="d-flex justify-content-between align-items-center mb-5">
+         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/rocket.png" alt=""></div>
+         <div><h5>-01784564541</h5></div>
+       </div>
+       <div class="d-flex justify-content-between align-items-center">
+         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/nogod.png" alt=""></div>
+         <div><h5>-01784564541</h5></div>
+       </div> 
+    </div>
   </div>
   <!-- top_menu start -->
 
@@ -475,7 +500,7 @@
   <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-lg-8 col-12 my-1 open-frm-modals students-img text-center">
-            <img src="images/shapes/Golden-ration-1.png"  class="img-lg-size img-enter " alt="Offer for Entrepreneurs and professionals"> 
+            <img onclick="paymentOption()" src="images/shapes/Golden-ration-1.png"  class="img-lg-size img-enter " alt="Offer for Entrepreneurs and professionals"> 
         </div>
     </div>
   </div> 
@@ -493,7 +518,7 @@
   <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-lg-8 col-12 open-frm-modals students-img text-center">
-            <img src="images/shapes/Golden-ration-2.png" class="img-lg-size img-enter" alt="Offer for Entrepreneurs and professionals"> 
+            <img onclick="paymentOption()" src="images/shapes/Golden-ration-2.png" class="img-lg-size img-enter" alt="Offer for Entrepreneurs and professionals"> 
         </div>
     </div>
   </div> 
@@ -506,14 +531,17 @@
 <!---our_clients start ---->
 
 <!-- ======social media section============== -->
-<section id='social-media'>
+<!-- <section id='social-media'>
     <div class="container">
       <h3 class="text-center fw-bold mb-5  ">Social Links</h3>
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fas fa-external-link-alt"></i> </h3>
-            <a href="http://easybusinessbysadi.com/" target="_blank">Website</a>
+            <p>
+              <a href="http://easybusinessbysadi.com/" target="_blank">Website</a>
+            </p>
+            
           </div>
         </div>
         <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
@@ -522,12 +550,12 @@
             <a href="https://www.facebook.com/MdShekSadiBusinessCoach/?ref=pages_you_manage" target="_blank">Facebook</a>
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+          <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-youtube"></i> </h3>
             <a href="https://www.youtube.com/channel/UC1JOaiSVY_r23L7widh91Bw" target="_blank">Youtube</a>
           </div>
-        </div>
+        </div>  
         <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-linkedin"></i> </h3>
@@ -574,7 +602,7 @@
         </div>
       </div>
     </div>
-</section>
+</section> -->
   
 
 <!---footer_top start ---->
@@ -636,9 +664,9 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-long-arrow-alt-up"></i></button> 
 
-<section id="Whatsapp">
+<!-- <section id="Whatsapp">
     <div class="elfsight-app-7808f57b-7594-4224-a01d-f19e1988a4d9"></div> 
-</section>
+</section> -->
  
 
   <!----whats apps--->

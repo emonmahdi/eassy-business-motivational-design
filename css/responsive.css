@@ -217,6 +217,12 @@
     .heading h3{
         font-size: 16px;
     }
+    .about-text{ 
+        text-align: center;
+    }
+    .about-text h3{  
+        text-align: center;
+    }
 } 
 
 

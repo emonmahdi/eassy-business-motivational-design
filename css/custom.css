@@ -33,6 +33,11 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+.top-text-close-btn2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #close{
      
 }
@@ -57,6 +62,24 @@ button.subscription-btn{
     background-color: #FFC600;
     border-radius: 30px;
     padding: 5px 15px;
+}
+/* Popup2  */
+#popup2{ 
+    background-color: #fff;
+    padding: 30px;
+    max-width: auto;
+    height: 500px; 
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999 ;
+    color:#000;
+    display: none;
+    box-shadow: 4px 10px 12px #000;
+}
+#close2{
+    margin-left: 70px;
 }
 /* top_menu   */
 
@@ -408,6 +431,7 @@ button.subscription-btn{
     text-transform: uppercase;
     font-weight: 700;
     color: black;
+    text-align: center;
 }
 
 .heading p {
@@ -653,8 +677,9 @@ button.subscription-btn{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    display: inline-block;
+    display: block;
     margin-top: 15px;
+    text-align: center;
 }
 .single-link i{
     font-size: 40px;
@@ -662,7 +687,7 @@ button.subscription-btn{
 }
 /* ===============about-shekh-sadi==================== */
 .about-text{
-    margin-top: 110px;
+    margin-top: 110px; 
 }
 .about-text h2{
     color:#FFC600;
@@ -677,7 +702,8 @@ button.subscription-btn{
 .about-text h3{ 
     font-weight: bold;
     font-size: 55px;
-    color:#FFC600;
+    color:#FFC600; 
+    text-align: left; 
 }
 #about-shek-sadi{
     padding:50px 0;

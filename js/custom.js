@@ -3,18 +3,29 @@
 
 const displayForm = () => {
 
-  window.addEventListener('scroll', document.querySelector('#popup').style.display = 'block')
+  window.addEventListener('scroll', document.querySelector('#popup').style.display = 'block') 
 }
 setTimeout(displayForm);
 
+//close btn 
 document.querySelector('#close').addEventListener('click', function() {
   document.querySelector('#popup').style.display = 'none'
+})
+
+ 
+// close2 btn
+document.querySelector('#close2').addEventListener('click', function() {
+  document.querySelector('#popup2').style.display = 'none'
 })
 
 function openform(){
   window.addEventListener('click', document.querySelector('#popup').style.display = 'block')
 }
 
+// Payment Popup 
+function paymentOption(){
+  document.addEventListener('click', document.querySelector('#popup2').style.display = 'block')
+}
 
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
