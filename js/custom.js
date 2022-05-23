@@ -18,14 +18,29 @@ document.querySelector('#close2').addEventListener('click', function() {
   document.querySelector('#popup2').style.display = 'none'
 })
 
+
+// close2 btn apps
+document.querySelector('#close3').addEventListener('click', function() {
+  document.querySelector('#popup3').style.display = 'none'
+})
+
 function openform(){
   window.addEventListener('click', document.querySelector('#popup').style.display = 'block')
 }
 
 // Payment Popup 
-function paymentOption(){
-  document.addEventListener('click', document.querySelector('#popup2').style.display = 'block')
+function paymentOption(e){
+  document.addEventListener('click', document.querySelector('#popup2').style.display = 'block');
+  e.preventDefault();
 }
+
+// App popup3
+function appPopUp(e){
+  document.addEventListener('click', document.querySelector('#popup3').style.display = 'block');
+  e.preventDefault();
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {

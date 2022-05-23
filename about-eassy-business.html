@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/banner/Logo.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="images/logo/processed-2.png" type="image/x-icon">
     
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -24,6 +24,9 @@
     <div class="top-text-close-btn">
       <div>
         <h6>Everything About Business</h6>
+      </div>
+      <div>
+        <button  onclick="paymentOption()" class="btn btn-primary">Pay Now</button> 
       </div>
       <div>
         <h3 id="close">&times;</h3>
@@ -53,6 +56,74 @@
        
     </form> 
 </div>
+ <!-- Popup2 Payment Options -->
+ <div id="popup2" class="rounded">
+  <div class="top-text-close-btn2">
+    <div>
+      <h2 class="fw-bold text-danger">Payment Method</h2>
+    </div> 
+    <div>
+      <h3 id="close2" class="fw-bold">&times;</h3>
+    </div>  
+  </div>
+  <div class="mt-3">
+     <div class="d-flex justify-content-between align-items-center mb-3">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/bkash.jpg" alt=""></div>
+       <div><h5>+8801705568586</h5></div>
+     </div>
+     <!-- <div class="d-flex justify-content-between align-items-center mb-3">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/rocket.png" alt=""></div>
+       <div><h5>-01784564541</h5></div>
+     </div> -->
+     <div class="d-flex justify-content-between align-items-center">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/nogod.png" alt=""></div>
+       <div><h5>+8801705568586</h5></div>
+     </div> 
+     <div class="row">
+      <div class="table-responsive">
+        <table class="table p-3 pb-3 mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Acc. Name</th>
+              <th scope="col">Acc. Number</th>
+              <th scope="col">Bank Name</th>
+              <th scope="col">Branch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Md. Shek Sadi</th>
+              <td>010612100043736</td>
+              <td>Mercantile Bank Limited</td>
+              <td>Banani</td>
+            </tr>
+            <tr>
+              <th scope="row">Md. Shek Sadi</th>
+              <td>1507202808501001</td>
+              <td>Brac Bank Limited</td>
+              <td>Banani</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+     </div>
+  </div>
+</div>
+ <!-- Popup3 Apps Options -->
+ <div id="popup3">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <h2 class="fw-bold text-primary">Easy Business Apps</h2>
+    </div> 
+    <div>
+      <h3 id="close3" class="fw-bold">&times;</h3>
+    </div>  
+  </div>
+  <div>
+    <h5 class="pt-5">Android apps is not published but you will get it soon.</h5>
+  </div>
+   
+ </div>
     <!-- top_menu start -->
 
   <section class="top_menu"> 
@@ -84,7 +155,9 @@
               <button class="btn btn-danger">
                 <a onclick="openform()" class="subscribe-form" >Subscribe</a> 
               </button>
-             
+              <button class="btn btn-primary mx-2">
+                <a onclick="paymentOption()" class="subscribe-form" >Payment</a> 
+              </button>
             </p>
           </div>
         </div>
@@ -101,13 +174,13 @@
     <a class="navbar-brand" href="index.html"> <img src="images/logo/processed-2.png" class="img-fluid logo-img"> </a>
     <div class="top2btn">
       <div class="mb-2">
-        <a class="enroll-link" href="index.html#early_bird_offer">
-          <button  class="btn btn-danger enroll-btn"><i class="far fa-hand-point-right"></i> Enroll Business</button> 
-        </a>
+        
+          <button onclick="paymentOption()" class="btn btn-danger enroll-btn"><i class="far fa-hand-point-right"></i> Enroll Business</button> 
+       
       </div>
       <div>
         <a class="enroll-link" href="#">
-          <button  class="btn btn-dark apps-btn"><i class="fab fa-google-play"></i> Download Apps</button> 
+          <button onclick="appPopUp()" class="btn btn-dark apps-btn"><i class="fab fa-google-play"></i> Download Apps</button> 
         </a>
       </div>
     </div>

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/banner/Logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo/processed-2.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -34,6 +34,9 @@
           <h6 class="fw-bold">Everything About Business</h6>
         </div> 
         <div>
+          <button  onclick="paymentOption()" class="btn btn-primary">Pay Now</button> 
+        </div>
+        <div>
           <h3 id="close">&times;</h3>
         </div>  
       </div>
@@ -56,37 +59,87 @@
           <option value="Dhaka">Dhaka</option>
         </select>
          <div class="submit-btn text-center my-3">
-          <button class="subscription-btn fw-bold">Subscribe Now</button>
+          <button class="subscription-btn fw-bold">Subscribe Now</button> 
+           
          </div>
         
-         
+         <div>
+          <!-- <button class="btn btn-primary mx-2">
+            <a onclick="paymentOption()" class="subscribe-form" >Payment</a> 
+          </button> -->
+         </div> 
       </form> 
+      <!-- -->
   </div>
-  <!-- Popup2 Payment Options -->
-  <div id="popup2" class="rounded">
-    <div class="top-text-close-btn2">
-      <div>
-        <h2 class="fw-bold text-danger">Payment Method</h2>
-      </div> 
-      <div>
-        <h3 id="close2" class="fw-bold">&times;</h3>
-      </div>  
-    </div>
-    <div class="mt-5">
-       <div class="d-flex justify-content-between align-items-center mb-5">
-         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/bkash.jpg" alt=""></div>
-         <div><h5>-01784564541</h5></div>
-       </div>
-       <div class="d-flex justify-content-between align-items-center mb-5">
-         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/rocket.png" alt=""></div>
-         <div><h5>-01784564541</h5></div>
-       </div>
-       <div class="d-flex justify-content-between align-items-center">
-         <div><img class="img-fluid" height="100px" width="100px" src="images/payment/nogod.png" alt=""></div>
-         <div><h5>-01784564541</h5></div>
-       </div> 
-    </div>
+<!-- Popup2 Payment Options -->
+<div id="popup2" class="rounded">
+  <div class="top-text-close-btn2">
+    <div>
+      <h2 class="fw-bold text-danger">Payment Method</h2>
+    </div> 
+    <div>
+      <h3 id="close2" class="fw-bold">&times;</h3>
+    </div>  
   </div>
+  <div class="mt-3">
+     <div class="d-flex justify-content-between align-items-center mb-3">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/bkash.jpg" alt=""></div>
+       <div><h5>+8801705568586</h5></div>
+     </div>
+     <!-- <div class="d-flex justify-content-between align-items-center mb-3">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/rocket.png" alt=""></div>
+       <div><h5>-01784564541</h5></div>
+     </div> -->
+     <div class="d-flex justify-content-between align-items-center">
+       <div><img class="img-fluid" height="100px" width="100px" src="images/payment/nogod.png" alt=""></div>
+       <div><h5>+8801705568586</h5></div>
+     </div> 
+     <div class="row">
+      <div class="table-responsive">
+        <table class="table p-3 pb-3 mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Acc. Name</th>
+              <th scope="col">Acc. Number</th>
+              <th scope="col">Bank Name</th>
+              <th scope="col">Branch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Md. Shek Sadi</th>
+              <td>010612100043736</td>
+              <td>Mercantile Bank Limited</td>
+              <td>Banani</td>
+            </tr>
+            <tr>
+              <th scope="row">Md. Shek Sadi</th>
+              <td>1507202808501001</td>
+              <td>Brac Bank Limited</td>
+              <td>Banani</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+     </div>
+  </div>
+</div>
+ <!-- Popup3 Apps Options -->
+ <div id="popup3">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <h2 class="fw-bold text-primary">Easy Business Apps</h2>
+    </div> 
+    <div>
+      <h3 id="close3" class="fw-bold">&times;</h3>
+    </div>  
+  </div>
+  <div>
+    <h5 class="pt-5">Android apps is not published but you will get it soon.</h5>
+  </div>
+   
+ </div>
+
   <!-- top_menu start -->
 
   <section class="top_menu"> 
@@ -118,6 +171,9 @@
               <button class="btn btn-danger">
                 <a onclick="openform()" class="subscribe-form" >Subscribe</a> 
               </button>
+              <button class="btn btn-primary mx-2">
+                <a onclick="paymentOption()" class="subscribe-form" >Payment</a> 
+              </button>
              
             </p>
           </div>
@@ -142,7 +198,7 @@
       </div>
       <div>
         <a class="enroll-link" href="#">
-          <button  class="btn btn-dark apps-btn"><i class="fab fa-google-play"></i> Download Apps</button> 
+          <button onclick="appPopUp()" class="btn btn-dark apps-btn"><i class="fab fa-google-play"></i> Download Apps</button> 
         </a>
       </div>
     </div>
@@ -284,7 +340,7 @@
         <div class="bn-thought wow bounceInUp" data-wow-duration="1.4s">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-12 shape-img"> 
-            	<img class="img-fluid" src="images/Icon-shape/sp3.jpg" alt="">
+            	<img class="img-fluid" src="images/Icon-shape/sp3-2.png" alt="">
           </div>
         </div>
       </div>
@@ -529,44 +585,46 @@
 <!---our_clients start ---->
 
 <!-- ======social media section============== -->
-<!-- <section id='social-media'>
+<section id='social-media'>
     <div class="container">
-      <h3 class="text-center fw-bold mb-5  ">Social Links</h3>
+      <div>
+        <h3 class="heading text-center fw-bold text-dark p-3 mb-4 wow bounceInUp" data-wow-duration="1.4s">Social Links</h3>
+      </div> 
+      
       <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="col-lg-3 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fas fa-external-link-alt"></i> </h3>
             <p>
               <a href="http://easybusinessbysadi.com/" target="_blank">Website</a>
-            </p>
-            
+            </p> 
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-facebook-square"></i> </h3>
             <a href="https://www.facebook.com/MdShekSadiBusinessCoach/?ref=pages_you_manage" target="_blank">Facebook</a>
           </div>
         </div>
-          <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+          <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-youtube"></i> </h3>
             <a href="https://www.youtube.com/channel/UC1JOaiSVY_r23L7widh91Bw" target="_blank">Youtube</a>
           </div>
         </div>  
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-linkedin"></i> </h3>
             <a href="https://www.linkedin.com/in/smartsheksadi/" target="_blank">Linkedin</a>
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-instagram-square"></i> </h3>
             <a href="https://www.instagram.com/mdsheksadibuscoach/" target="_blank">Instagram</a>
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+        <!-- <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-whatsapp-square"></i> </h3>
             <h5>+880 170 556 8586</h5>
@@ -579,20 +637,20 @@
             <h5>easybusinesssadi@gmail.com</h5>
             <a href="" title="">Gmail</a>
           </div> 
-        </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4"> 
+        </div> -->
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4"> 
           <div class="single-link text-center">
             <h3><i class="fab fa-twitter-square"></i></h3> 
             <a href="https://twitter.com/Md_ShekSadi" target="_blank">Twitter</a> 
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4"> 
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4"> 
           <div class="single-link text-center"> 
             <h3><i class="fab fa-vimeo-square"></i></h3> 
             <a href="https://vimeo.com/manage/videos" target="_blank">Vimeo</a>
           </div>
         </div>
-        <div class="col-lg-2 col-lg-2 col-md-3 col-sm-4">
+        <div class="col-lg-3 col-lg-2 col-md-3 col-sm-4">
           <div class="single-link text-center">
             <h3><i class="fab fa-tiktok"></i></h3>
             <a href="https://www.tiktok.com/@mdsheksadibuscoach?lang=en" target="_blank">Tiktok</a>
@@ -600,7 +658,7 @@
         </div>
       </div>
     </div>
-</section> -->
+</section>
   
 
 <!---footer_top start ---->
@@ -609,7 +667,7 @@
       <div class="container">
         <div class="row text-white">
           <div class="col-lg-4"> 
-                <h3>Easy Business</h3> 
+              <h3 class="text-start">Easy Business</h3> 
               <p>For A Better Learning Experience And Outcome, Every Course Has A Combination Of Graphics, Videos, Animation, Reading Material & Assesments</p>
           </div>
           <div class="col-lg-4">
@@ -624,14 +682,14 @@
               <li><i class="far fa-arrow-alt-circle-right"></i><a href="#">+8801705568586, +8801924-440240</a></li> 
               <li><i class="fab fa-linkedin-in"></i>SADI COTTAGE (Third Floor), House No-27, DAG No-1228, Road No-03, Ward No-40, Block No-A, Thana-Vatara, Vatara Nayabari, Dhaka-1212.</li>
             </ul>
-            <ul class="mt-4 social-icons">
+            <!-- <ul class="mt-4 social-icons">
               <li><a title="Facebook" target="_blank" href="https://www.facebook.com/MdShekSadiBusinessCoach/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></li>
               <li><a title="Twitter" target="_blank" href="https://twitter.com/Md_ShekSadi"><i class="fab fa-twitter"></i> </a></li>
-              <!--<li><a title="Google Plus" target="_blank" href="https://www.google.plus.com"><span class="fa fa-google-plus"></span></a></li>-->
-              <li><a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/smartsheksadi/"><i class="fab fa-linkedin-in"></i> </a></li>
+              <!-<li><a title="Google Plus" target="_blank" href="https://www.google.plus.com"><span class="fa fa-google-plus"></span></a></li>-->
+              <!-- <li><a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/smartsheksadi/"><i class="fab fa-linkedin-in"></i> </a></li>
               <li><a title="Youtube" target="_blank" href="https://www.youtube.com/channel/UC1JOaiSVY_r23L7widh91Bw"><i class="fab fa-youtube"></i> </a></li>
-              <li><a title="+880 170 556 8586" target="_blank" href="#"><i class="fab fa-whatsapp Green"></i> </a></li>
-            </ul>
+              <li><a title="+880 170 556 8586" target="_blank" href="#"><i class="fab fa-whatsapp Green"></i> </a></li> 
+            </ul> -->
         </div> 
         </div>
       </div>

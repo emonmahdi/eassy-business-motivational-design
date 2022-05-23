@@ -68,7 +68,22 @@ button.subscription-btn{
     background-color: #fff;
     padding: 30px;
     max-width: auto;
-    height: 500px; 
+    height: auto; 
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999 ;
+    color:#000;
+    display: none;
+    box-shadow: 4px 10px 12px #000;
+    overflow: hidden;
+}
+#popup3{ 
+    background-color: #fff;
+    padding: 30px;
+    max-width: auto;
+    height: 300px; 
     position:fixed;
     top: 50%;
     left: 50%;
@@ -181,12 +196,13 @@ button.subscription-btn{
     height: 180px;
     width: 100%;
 }  
-#Program_bonifit .heading,#topics_coverds .heading, #who_will_teach .heading ,#other_platform .heading ,#our_clients .heading{
+#Program_bonifit .heading,#topics_coverds .heading, #who_will_teach .heading ,#other_platform .heading ,#our_clients .heading, #social-media .heading{
      
     font-size: 40px;
     text-align: center;
     background: #F9CC22; /*#139cf7*/  
     border-radius: 5px;
+    color:#000;
     transition: all 0.3s ease-in-out; 
 }
 #Program_bonifit .abc{
@@ -683,7 +699,12 @@ button.subscription-btn{
 }
 .single-link i{
     font-size: 40px;
-    color:#ffc600;
+    color:#ffc600; 
+    
+}
+.single-link h3 i{
+    display: block;
+    text-align: center;
 }
 /* ===============about-shekh-sadi==================== */
 .about-text{
