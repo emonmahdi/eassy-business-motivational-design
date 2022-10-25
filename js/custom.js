@@ -35,10 +35,10 @@ function paymentOption(e){
 }
 
 // App popup3
-function appPopUp(e){
+/* function appPopUp(e){
   document.addEventListener('click', document.querySelector('#popup3').style.display = 'block');
-  e.preventDefault();
-}
+  e.preventDefault(); 
+} */
 
 
 
